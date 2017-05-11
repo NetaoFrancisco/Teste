@@ -1,0 +1,804 @@
+#include<stdio.h> 
+#include<conio.h>
+#include<stdlib.h>
+
+main () {
+	
+	//para atribuir os pesos das notas de Banco
+	int func=2;
+	int conf=1;
+	int usab=1;
+	int efici=1;
+	int manu=1;
+	int port=1;
+	int efica=1;
+	int prod=1;
+	int segu=1;
+	int sati=2;
+	
+	//Para Atribuir notas de Jogo
+	int jfunc=2;
+	int jconf=1;
+	int jusab=1;
+	int jefici=1;
+	int jmanu=1;
+	int jport=1;
+	int jefica=1;
+	int jprod=1;
+	int jsegu=1;
+	int jsati=2;
+	//-------------------------------------------------
+	
+	// soma dos pesos	
+		int somapesos=0;
+		somapesos= somapesos+func+conf+usab+efici+manu+port+efica+prod+segu+sati;
+		
+		int somapesosj=0;
+		somapesosj = somapesosj + jfunc +jconf +jusab + jefici + jmanu+ jport+ jefica+ jprod + jsegu + jsati;
+		printf("%d",&somapesosj);
+	//---------------------------------	
+	
+	//Atribuindo valores das notas
+	int exelente=5;
+	int bom=4;
+	int regular=3;
+	int ruim=2;
+	int pessimo=1;
+	//----------------------------------
+	
+	//para fazer as somas
+	double resultFinal=0;
+	char sair;
+	int contador=0;
+	int res=0;
+	//----------------------------------
+	// Cliar dados do clientes
+	
+	char sobre[30];
+	char dep[20];
+	char data[10];
+	
+	//-------------------------------------
+	int entra;
+	
+	//Perguntas do Sistema
+	printf("\t\t-----Avalie nosso produto-----\n\n");
+	
+	printf("Digite seu nome?\n");
+		scanf("%s",&sobre);
+	printf("Digite seu departamento?\n");
+		scanf("%s",&dep);
+	printf("Digite a data da avaliação?\n");
+		scanf("%s",&data);	
+				system("cls");
+				
+	
+			
+		
+		
+	printf("Pronto para as perguntas?\n\n");
+	printf("Digite s para continua ou n para Sair:\n ");
+	scanf("%s",&sair);
+	//-----------------------Decisão se continua ou para-------------------------------------
+		if(sair == 's'){
+			
+	printf("Qual avaliação deseja fazer?\n\n");
+	printf("Software do Banco digite 1 Software Jogo digite 2\n");
+	scanf("%d",&entra);
+	
+			if(entra == 1 ){
+
+	system(">>NULL");
+	system("cls");
+	printf("Vamos La!\n");
+	
+	//---------------------perguntas para Atribuir as notas--------------------------------
+	printf("De sua nota em nossa Funcionalidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*func;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*func;
+			
+			break;
+			
+		case 3://regular
+			res+=3*func;
+			
+			break;
+			
+		case 4: 
+		res+=4*func;//bom
+	
+		break;
+		case 5:
+			res+=5*func;//excelente
+			
+			break;
+		}
+		system("cls");
+		
+			printf("De sua nota em nossa Confiabilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*conf;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*conf;
+			
+			break;
+			
+		case 3://regular
+			res+=3*conf;
+			
+			break;
+			
+		case 4: 
+		res+=4*conf;//bom
+	
+		break;
+		case 5:
+			res+=5*conf;//excelente
+			
+			break;
+		}
+		system("cls");
+		
+		printf("De sua nota em nossa Usabilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*usab;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*usab;
+			
+			break;
+			
+		case 3://regular
+			res+=3*usab;
+			
+			break;
+			
+		case 4: 
+		res+=4*usab;//bom
+	
+		break;
+		case 5:
+			res+=5*usab;//excelente
+			
+			break;
+		}
+		
+		system("cls");
+		
+		printf("De sua nota em nossa Eficiencia?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*efici;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*efici;
+			
+			break;
+			
+		case 3://regular
+			res+=3*efici;
+			
+			break;
+			
+		case 4: 
+		res+=4*efici;//bom
+	
+		break;
+		case 5:
+			res+=5*efici;//excelente
+			
+			break;
+		}
+		
+			system("cls");
+		
+			printf("De sua nota em nossa Manutenbilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*manu;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*manu;
+			
+			break;
+			
+		case 3://regular
+			res+=3*manu;
+			
+			break;
+			
+		case 4: 
+		res+=4*manu;//bom
+	
+		break;
+		case 5:
+			res+=5*manu;//excelente
+			
+			break;
+		}
+			system("cls");
+			
+				printf("De sua nota em nossa Portabilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*port;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*port;
+			
+			break;
+			
+		case 3://regular
+			res+=3*port;
+			
+			break;
+			
+		case 4: 
+		res+=4*port;//bom
+	
+		break;
+		case 5:
+			res+=5*port;//excelente
+			
+			break;
+		}
+			system("cls");	
+		
+		printf("Agora vamos volta os quesitos de Qualidae de Uso\n\n");
+			
+					printf("De sua nota em nossa Eficacia?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*efica;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*efica;
+			
+			break;
+			
+		case 3://regular
+			res+=3*efica;
+			
+			break;
+			
+		case 4: 
+		res+=4*efica;//bom
+	
+		break;
+		case 5:
+			res+=5*efica;//excelente
+			
+			break;
+		}
+			system("cls");
+			
+				printf("De sua nota em nossa Produtividades?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*prod;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*prod;
+			
+			break;
+			
+		case 3://regular
+			res+=3*prod;
+			
+			break;
+			
+		case 4: 
+		res+=4*prod;//bom
+	
+		break;
+		case 5:
+			res+=5*prod;//excelente
+			
+			break;
+		}
+			system("cls");
+			
+				printf("De sua nota em nossa Seguranca?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*segu;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*segu;
+			
+			break;
+			
+		case 3://regular
+			res+=3*segu;
+			
+			break;
+			
+		case 4: 
+		res+=4*segu;//bom
+	
+		break;
+		case 5:
+			res+=5*segu;//excelente
+			
+			break;
+		}
+			system("cls");		
+		
+				printf("De sua nota em nossa Satifacao?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*sati;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*sati;
+			
+			break;
+			
+		case 3://regular
+			res+=3*sati;
+			
+			break;
+			
+		case 4: 
+		res+=4*sati;//bom
+	
+		break;
+		case 5:
+			res+=5*sati;//excelente
+			
+			break;
+		}
+			system("cls");
+				
+		}//saida do if
+		
+		else if(entra == 2){//Entrando em JOGO
+				printf("De sua nota em nossa Funcionalidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*func;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*func;
+			
+			break;
+			
+		case 3://regular
+			res+=3*func;
+			
+			break;
+			
+		case 4: 
+		res+=4*func;//bom
+	
+		break;
+		case 5:
+			res+=5*func;//excelente
+			
+			break;
+		}
+		system("cls");
+		
+			printf("De sua nota em nossa Confiabilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*conf;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*conf;
+			
+			break;
+			
+		case 3://regular
+			res+=3*conf;
+			
+			break;
+			
+		case 4: 
+		res+=4*conf;//bom
+	
+		break;
+		case 5:
+			res+=5*conf;//excelente
+			
+			break;
+		}
+		system("cls");
+		
+		printf("De sua nota em nossa Usabilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*usab;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*usab;
+			
+			break;
+			
+		case 3://regular
+			res+=3*usab;
+			
+			break;
+			
+		case 4: 
+		res+=4*usab;//bom
+	
+		break;
+		case 5:
+			res+=5*usab;//excelente
+			
+			break;
+		}
+		
+		system("cls");
+		
+		printf("De sua nota em nossa Eficiencia?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*efici;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*efici;
+			
+			break;
+			
+		case 3://regular
+			res+=3*efici;
+			
+			break;
+			
+		case 4: 
+		res+=4*efici;//bom
+	
+		break;
+		case 5:
+			res+=5*efici;//excelente
+			
+			break;
+		}
+		
+			system("cls");
+		
+			printf("De sua nota em nossa Manutenbilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*manu;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*manu;
+			
+			break;
+			
+		case 3://regular
+			res+=3*manu;
+			
+			break;
+			
+		case 4: 
+		res+=4*manu;//bom
+	
+		break;
+		case 5:
+			res+=5*manu;//excelente
+			
+			break;
+		}
+			system("cls");
+			
+				printf("De sua nota em nossa Portabilidade?\n");
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*port;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*port;
+			
+			break;
+			
+		case 3://regular
+			res+=3*port;
+			
+			break;
+			
+		case 4: 
+		res+=4*port;//bom
+	
+		break;
+		case 5:
+			res+=5*port;//excelente
+			
+			break;
+		}
+			system("cls");	
+		
+		printf("Agora vamos volta os quesitos de Qualidae de Uso\n\n");
+			
+					printf("De sua nota em nossa Eficacia?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*efica;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*efica;
+			
+			break;
+			
+		case 3://regular
+			res+=3*efica;
+			
+			break;
+			
+		case 4: 
+		res+=4*efica;//bom
+	
+		break;
+		case 5:
+			res+=5*efica;//excelente
+			
+			break;
+		}
+			system("cls");
+			
+				printf("De sua nota em nossa Produtividades?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*prod;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*prod;
+			
+			break;
+			
+		case 3://regular
+			res+=3*prod;
+			
+			break;
+			
+		case 4: 
+		res+=4*prod;//bom
+	
+		break;
+		case 5:
+			res+=5*prod;//excelente
+			
+			break;
+		}
+			system("cls");
+			
+				printf("De sua nota em nossa Seguranca?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*segu;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*segu;
+			
+			break;
+			
+		case 3://regular
+			res+=3*segu;
+			
+			break;
+			
+		case 4: 
+		res+=4*segu;//bom
+	
+		break;
+		case 5:
+			res+=5*segu;//excelente
+			
+			break;
+		}
+			system("cls");		
+		
+				printf("De sua nota em nossa Satifacao?\n");//peso = 2
+		
+		printf(" 1 = Pessimo\n 2 = Ruim\n 3 = Regular\n 4 = Bom\n 5 = Exelente\n");
+	
+	scanf("%d",&contador);
+	switch(contador){
+		
+		case 1://pessimo
+			res+=1*sati;
+		
+				break;	
+		
+		case 2://ruim
+			res+=2*sati;
+			
+			break;
+			
+		case 3://regular
+			res+=3*sati;
+			
+			break;
+			
+		case 4: 
+		res+=4*sati;//bom
+	
+		break;
+		case 5:
+			res+=5*sati;//excelente
+			
+			break;
+			
+
+		}
+}
+	
+
+		system("cls");
+		resultFinal = (double)res/somapesos;
+		
+		
+		printf("Seu Nome e: %s\n",sobre);
+		printf("Seu Departamento e: %s\n",dep);
+		printf("Data: %s\n\n",data);
+		printf("Sua nota para o sistema: %.2f.\n", resultFinal);
+		
+		if(resultFinal >=0 && resultFinal<= 1 )
+			printf("O Software e Pessimo!");
+	
+			else if(resultFinal >1 && resultFinal <= 2)
+			
+				printf("O Software e Ruim!");
+		
+				else if(resultFinal >2 && resultFinal <=3)
+					printf("O Software e Bom!");
+					
+					else if(resultFinal >3 && resultFinal<= 4)
+						printf("O Software e Otimo!");
+						
+						else					
+							printf("O Software e Exelente");
+		
+		
+		
+		
+		}
+
+
+		else if (sair== 'n')
+	
+			system("pause>>NULL");		
+}
